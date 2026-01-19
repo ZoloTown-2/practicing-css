@@ -1,0 +1,26 @@
+body {
+  background-color: #fbfbfe;
+  color: #17230b;
+}
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+h2 {
+  color: darkmagenta;
+  background-color: khaki;
+  font-style: italic;
+}
+p.big {
+  font-size: 24px;
+}
+p.header-mimic {
+  color: indigo;
+  font-size: 28px;
+  font-weight: bolder;
+}
+p.anchor-mimic {
+  color: midnightblue;
+  text-align: right;
+  text-decoration: underline;
+}
