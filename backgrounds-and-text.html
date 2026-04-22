@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Backgrounds & Text &#x2014; Practicing CSS</title>
+  <style>
+    body {
+      background-color: #fbfbfe;
+      color: #17230b;
+    }
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    h2 {
+      color: darkmagenta;
+      background-color: khaki;
+      font-style: italic;
+      font-family: 'Times New Roman', Times, serif;
+      font-style: italic;
+    }
+    ul {
+      list-style: none;
+    }
+    li {
+      display: inline-block;
+      margin: 10px;
+      font-size: 20px;
+    }
+    nav a {
+      padding: 5px;
+      margin: 4px;
+      border: 2px solid black;
+      background-color: #191970;
+      color: #f5f5ff;
+    }
+    nav a:hover, nav a:focus {
+      color: #E7E790;
+    }
+    section {
+      background-color: #5ac88b;
+    }
+    section p {
+      background-color: yellow;
+    }
+    p.big {
+      font-size: 24px;
+    }
+    p.header-mimic {
+      color: indigo;
+      font-size: 28px;
+      font-weight: bolder;
+    }
+    p.anchor-mimic {
+      color: midnightblue;
+      text-align: right;
+      text-decoration: underline;
+    }
+    #styled-by-id {
+      font-family: Georgia, Cambria, serif;
+      font-weight: bold;
+    }
+    .nav-link {
+      padding: 5px;
+      margin: 4px;
+      border: 2px solid black;
+      background-color: #191970;
+      color: #f5f5ff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a class="nav-link" href="index.html">Home Page</a></li>
+        <li><a class="nav-link" href="internal-css.html">Internal CSS</a></li>
+        <li><a class="nav-link" href="external-css.html">External CSS</a></li>
+        <li><a class="nav-link" href="testing-cascading.html">Testing Cascading</a></li>
+        <li><a class="nav-link" href="classes-and-ids.html">Classes & IDs</a></li>
+        <li><a class="nav-link" href="div-and-span.html">Div & Span</a></li>
+        <li><a class="nav-link" href="typography.html"><i>Typography</i></a></li>
+      </ul>
+    </nav>
+    <hr />
+  </header>
+  <main>
+    <div style="background-color: ghostwhite; height: 180px; width: auto; height: auto;">
+      <p class="big">This page shows the effects of adding internal CSS to HTML tags.</p>
+      <p class="header-mimic">Xander Thomson</p>
+      <p class="anchor-mimic">Web Development</p>
+      <p>I like creating web pages and learning about the aspects of web development I did not previously know.</p>
+      <p>I do not like the group projects, which we have not done in a while.</p>
+      <p>I like assembling and disassembling computers, as well as learning about the individual components.</p>
+      <p>I do not like the amount of times the class has been disrupted or truncated because of distractons.</p>
+      <p id="styled-by-id">This paragraph will show the effect of giving an element an ID and <span style="color: darkmagenta;">styling</span> that ID.</p>
+    </div>
+  </main>
+  <footer>
+    <hr />
+    <p>&#169; <a href="mailto:xthomson@smail.pembinatrails.ca">Xander Thomson</a>, 2026</p>
+  </footer>
+</body>
+<nav>
+  <main>
+    <h2>Nav Under the Body</h2>
+    <section>
+      <p>The CSS background properties are used to add background effects for elements.</p>
+      <p>The background-color property specifies the background color of an element.</p>
+      <p>With CSS, a color is most often specified by a valid color name (like "red"), a HEX value (like #ff0000), or an RGB value (like rgb(255,0,0)).</p>
+      <p>You can set the background color for any HTML elements.</p>
+      <p>The opacity property specifies the opacity/transparency of an element. It can take value from 0.0 - 1.0. The lower value, the more transparent.</p>
+      <p>Note: When using the opacity property to add transparency to the background of an element, all of its child elements inherit the same transparency. This can make the text inside a fully transparent element hard to read.</p>
+      <p>If you do not want to apply opacity to child elements, use RGBA color values.</p>
+      <p>You learned from W3School's CSS Colors Chapter, that you can use RGB as a color value. In addition to RGB, you can use an RGB color value with an alpha channel (RGBA) which specifies the opacity for a color.</p>
+      <p>An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).</p>
+    </section>
+    <ul>
+      <li><a class="nav-link" href="index.html">Home Page</a></li>
+      <li><a class="nav-link" href="internal-css.html">Internal CSS</a></li>
+      <li><a class="nav-link" href="external-css.html">External CSS</a></li>
+      <li><a class="nav-link" href="testing-cascading.html">Testing Cascading</a></li>
+      <li><a class="nav-link" href="classes-and-ids.html">Classes & IDs</a></li>
+      <li><a class="nav-link" href="div-and-span.html"><i>Div & Span</i></a></li>
+      <li><a class="nav-link" href="typography.html">Typography</a></li>
+    </ul>
+  </main>
+</nav>
+</html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Internal CSS &#x2014; Practicing CSS</title>
+  <title>Classes & IDs &#x2014; Practicing CSS</title>
   <style>
     body {
       background-color: #fbfbfe;
@@ -18,6 +18,14 @@
       background-color: khaki;
       font-style: italic;
     }
+    ul {
+      list-style: none;
+    }
+    li {
+      display: inline-block;
+      margin: 10px;
+      font-size: 20px;
+    }
     p.big {
       font-size: 24px;
     }
@@ -31,19 +39,30 @@
       text-align: right;
       text-decoration: underline;
     }
+    #styled-by-id {
+      font-family: Georgia, Cambria, serif;
+      font-weight: bold;
+    }
+    .nav-link {
+      padding: 5px;
+      margin: 4px;
+      border: 2px solid black;
+      background-color: #191970;
+      color: #f5f5ff;
+    }
   </style>
 </head>
 <body>
   <header>
     <nav>
       <ul>
-        <li><a href="index.html">Home Page</a></li>
-        <li><a href="internal-css.html"><i>Internal CSS</i></a></li>
-        <li><a href="external-css.html">External CSS</a></li>
-        <li><a href="testing-cascading.html">Testing Cascading</a></li>
-        <li><a href="classes-and-ids.html">Classes & IDs</a></li>
-        <li><a href="div-and-span.html">Div & Span</a></li>
-        <li><a href="typography.html">Typography</a></li>
+        <li><a class="nav-link" href="index.html">Home Page</a></li>
+        <li><a class="nav-link" href="internal-css.html">Internal CSS</a></li>
+        <li><a class="nav-link" href="external-css.html">External CSS</a></li>
+        <li><a class="nav-link" href="testing-cascading.html">Testing Cascading</a></li>
+        <li><a class="nav-link" href="classes-and-ids.html"><i>Classes & IDs</i></a></li>
+        <li><a class="nav-link" href="div-and-span.html">Div & Span</a></li>
+        <li><a class="nav-link" href="typography.html">Typography</a></li>
       </ul>
     </nav>
     <hr />
@@ -59,6 +78,8 @@
     <h2>PC Hardware</h2>
     <p>I like assembling and disassembling computers, as well as learning about the individual components.</p>
     <p>I do not like the amount of times the class has been disrupted or truncated because of distractons.</p>
+    <hr />
+    <p id="styled-by-id">This paragraph will show the effect of giving an element an ID and styling that ID.</p>
   </main>
   <footer>
     <hr />
