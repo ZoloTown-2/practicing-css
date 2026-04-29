@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Backgrounds & Text &#x2014; Practicing CSS</title>
+  <title>Transforms &#x2014; Practicing CSS</title>
   <style>
     body {
-      background: url(images/bubbles.jpg);
+      background: linear-gradient(60deg, #00fff0, #0083fe);
       background-repeat: no-repeat;
       background-size: cover;
       background-color: #fbfbfe;
@@ -85,6 +85,22 @@
       padding: 10px;
       width: 200px;
     }
+    #speech-bubble {
+      background-color: gainsboro;
+      position: relative;
+      width: 10rem;
+      padding: 1rem;
+      margin: 1rem;
+      border-radius: 1rem;
+    }
+    #speech-arrow {
+      position: relative;
+      right: -2rem;
+      bottom: -6rem;
+      width: 10rem;
+      height: 10rem;
+      transform: rotate(135deg);
+    }
     .nav-link {
       padding: 5px;
       margin: 4px;
@@ -105,9 +121,9 @@
         <li><a class="nav-link" href="classes-and-ids.html">Classes & IDs</a></li>
         <li><a class="nav-link" href="div-and-span.html">Div & Span</a></li>
         <li><a class="nav-link" href="typography.html">Typography</a></li>
-        <li><a class="nav-link" href="backgrounds-and-text.html"><i>Backgrounds & Text</i></a></li>
+        <li><a class="nav-link" href="backgrounds-and-text.html">Backgrounds & Text</a></li>
         <li><a class="nav-link" href="gradient-practice.html">Gradient Practice</a></li>
-        <li><a class="nav-link" href="transforms.html">Transforms</a></li>
+        <li><a class="nav-link" href="transforms.html"><i>Transforms</i></a></li>
       </ul>
     </nav>
     <hr />
@@ -122,6 +138,12 @@
       <p>I like assembling and disassembling computers, as well as learning about the individual components.</p>
       <p>I do not like the amount of times the class has been disrupted or truncated because of distractons.</p>
       <p id="styled-by-id">This paragraph will show the effect of giving an element an ID and <span style="color: darkmagenta;">styling</span> that ID.</p>
+    </div>
+    <div id="speech-bubble">
+      <svg id="speech-arrow">
+        <polygon points="50,0 0,100 100,100" style="fill:gainsboro;" />
+      </svg>
+      <div id="speech-bubble-contents">Yujef 37</div>
     </div>
     <img src="images/duke.png" alt="Java's mascot, Duke. It is a strange bipedal white blob-thing with a black top, red face(?), and two arms." id="duke-img" />
   </main>
@@ -152,9 +174,9 @@
       <li><a class="nav-link" href="classes-and-ids.html">Classes & IDs</a></li>
       <li><a class="nav-link" href="div-and-span.html">Div & Span</a></li>
       <li><a class="nav-link" href="typography.html">Typography</a></li>
-      <li><a class="nav-link" href="backgrounds-and-text.html"><i>Backgrounds & Text</i></a></li>
+      <li><a class="nav-link" href="backgrounds-and-text.html">Backgrounds & Text</a></li>
       <li><a class="nav-link" href="gradient-practice.html">Gradient Practice</a></li>
-      <li><a class="nav-link" href="transforms.html">Transforms</a></li>
+      <li><a class="nav-link" href="transforms.html"><i>Transforms</i></a></li>
     </ul>
   </main>
 </nav>
