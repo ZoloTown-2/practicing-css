@@ -25,3 +25,11 @@ p.anchor-mimic {
   text-align: right;
   text-decoration: underline;
 }
+#relative {
+  position: relative;
+}
+#absolute {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
